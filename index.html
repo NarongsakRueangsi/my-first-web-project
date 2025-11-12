@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัว - ณรงค์ศักดิ์ เรืองศรี</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .background-mountain {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            z-index: 0;
+            overflow: hidden;
+        }
+        
+        .mountain {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .mountain-back {
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            width: 500px;
+            height: 250px;
+            background: linear-gradient(to top, #2d5016 0%, #3a6b1f 50%, #4a8024 100%);
+            border-radius: 50% 50% 0 0;
+            opacity: 0.7;
+        }
+        
+        .mountain-front {
+            position: absolute;
+            bottom: 0;
+            right: 15%;
+            width: 600px;
+            height: 300px;
+            background: linear-gradient(to top, #1a3d0f 0%, #2d5016 50%, #3a6b1f 100%);
+            border-radius: 50% 50% 0 0;
+            opacity: 0.8;
+        }
+        
+        .trees {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background-image: repeating-linear-gradient(90deg, transparent, transparent 20px, #1a3d0f 20px, #1a3d0f 25px, transparent 25px, transparent 45px);
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 50px 60px;
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .info-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .label {
+            font-weight: bold;
+            color: #764ba2;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        
+        .value {
+            color: #333;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        
+        .hobby-section {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+        
+        .goal-section {
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 25px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .mountain-back,
+            .mountain-front {
+                width: 300px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-mountain">
+        <div class="mountain">
+            <div class="mountain-back"></div>
+            <div class="mountain-front"></div>
+            <div class="trees"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>🎸 แนะนำตัว</h1>
+
+        <div class="info-item">
+            <div class="label">ชื่อ:</div>
+            <div class="value">ณรงค์ศักดิ์ เรืองศรี</div>
+        </div>
+
+        <div class="info-item">
+            <div class="label">ชื่อเล่น:</div>
+            <div class="value">กีต้าร์</div>
+        </div>
+
+        <div class="info-item">
+            <div class="label">เลขนิสิต:</div>
+            <div class="value">67026034</div>
+        </div>
+
+        <div class="info-item">
+            <div class="label">ระดับชั้นปี:</div>
+            <div class="value">ปี 2</div>
+        </div>
+
+        <div class="info-item hobby-section">
+            <div class="label">งานอดิเรก:</div>
+            <div class="value">ชอบเล่นเกมกับเพื่อน ฟังเพลง ดูยูทูป ศึกษาหุ้น</div>
+        </div>
+
+        <div class="info-item goal-section">
+            <div class="label">สิ่งที่อยากเรียน:</div>
+            <div class="value">เขียนคำสั่งการทำงานให้ AI เจนให้เรา</div>
+        </div>
+    </div>
+</body>
+
+</html>
